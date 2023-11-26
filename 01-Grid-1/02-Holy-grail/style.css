@@ -12,9 +12,47 @@ body {
 
 .hlavicka	{ background-color: #2ecc71; }
 .hlavni		{ background-color: #f1c40f; }
-.levy			{ background-color: #3498db; }
+.levy		{ background-color: #3498db; }
 .pravy		{ background-color: #e74c3c; }
 .paticka	{ background-color: #9b59b6; }
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+	display: grid;
+	grid-template-columns: 200px auto 250px;
+	grid-template-rows: 200px auto 100px;
+	gap: 20px;
+}
+
+.hlavicka {
+	grid-column: 1/ span 3;
+	/* grid-row: 1/ span 1; */
+	grid-row: 1;
+}
+
+.levy {
+	/* grid-column: 1/span 1; */
+	grid-column: 1;
+	/* grid-row: 2/ span 1; */
+	grid-row: 2;
+
+}
+
+.hlavni {
+	/* grid-column: 2/span 1; */
+	grid-column: 2;
+	/* grid-row: 2/span 1; */
+	grid-row: 2;
+}
+
+.pravy {
+	grid-column: -1/-2;
+	/* grid-row: 2/span 1; */
+	grid-row: 2;
+}
+
+.paticka {
+	grid-column: 1/span 3;
+	grid-row: -1/-2;
+}

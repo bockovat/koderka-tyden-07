@@ -4,3 +4,22 @@ html { box-sizing: border-box; }
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    gap: 1px;
+}
+
+.foto img {
+    height: 100%;
+    width: 100%;
+    /* nastavena sirka a vyska fotky jako pole mrizky */
+    object-fit: cover;
+}
+
+.foto:nth-child(5n) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+

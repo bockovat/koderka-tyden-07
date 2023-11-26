@@ -2,10 +2,18 @@
 html { box-sizing: border-box;}
 *, ::after, ::before { box-sizing: inherit; }
 
-.kontejner > div {
+.kontejner > div, header, nav, menu, article, aside, footer, h1 {
 	padding: 20px;
 	font: 24px/1 sans-serif;
 	color: white;
+}
+
+h1 {
+	padding: 0;
+}
+
+p {
+	font-size: 16px;
 }
 
 .kontejner > div > :first-child {
@@ -65,4 +73,32 @@ html { box-sizing: border-box;}
 	background-color: #636e72;
 }
 
+/* -------------------------------------- */
 
+.kontejner {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px repeat(3, auto) 250px 100px;
+	gap: 20px;
+}
+
+.hlavicka {
+	grid-column: span 2;
+}
+
+.clanek1 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.reklama1 {
+	grid-row: 3;
+}
+
+.clanek2 {
+	grid-column: span 2;
+}
+
+.paticka {
+	grid-column: span 3;
+}
