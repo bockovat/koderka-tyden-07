@@ -8,3 +8,24 @@ body {
 
 /* ---------------------------------------------------- */
 
+.galerie {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(150px, 1fr));
+	grid-template-rows:;
+	gap: 20px;
+}
+
+.galerie figure {
+	background-color: white;
+	padding: 5px;
+	margin: 0;
+}
+
+.galerie img {
+	width: 100%;
+	/* aby se obrazky chovaly responzivne, byly velke tak aby se vesli na zobrazovanou plochu */
+}
+
+.galerie figcaption {
+	text-align: center;
+}

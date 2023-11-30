@@ -17,3 +17,27 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+	display: grid;
+	grid-template-columns: [menu-start] 200px [menu-end obsah-start] 1fr [obsah-end reklama-start] 250px [reklama-end];
+	grid-template-rows: 200px auto 100px;
+	gap: 20px;
+}
+
+.hlavicka {
+	grid-column: 1 / -1;
+}
+
+.pravy {
+	grid-column: reklama;
+	grid-row: 2;
+}
+
+.levy {
+	grid-column: menu;
+	grid-row: 2;
+}
+
+.paticka {
+	grid-column: span 3;
+}
